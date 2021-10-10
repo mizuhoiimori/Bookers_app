@@ -1,15 +1,12 @@
-<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-
 <!DOCTYPE html>
 
-<html>
   <head>
-    <title>Bookers</title>
-    <meta name="csrf-param" content="authenticity_token">
-    <meta name="csrf-token" content="2SaG3L0hQT2FbxKNCJ77vyNmShgm0623NbhZ6EkqkLmn6uobvfNeXtX9mgfp3OI37u11ipSQCaGTtW04o/rTFw==">
-    <script src="/assets/application-114264dd93c8ff30e4335b71eed7949d66c4e7a8eb62e2de6284c046fe07104b.js" data-turbolinks-track="reload"></script><link rel="stylesheet" media="all" href="/assets/application-d12397cbc3a266ce5a99f7b588223090c55ca04a439953bb5f9304395de93fc3.css" data-turbolinks-track="reload">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+  
   <body>
     <%= yield %>
   </body>
