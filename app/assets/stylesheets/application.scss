@@ -13,12 +13,6 @@
  *= require_tree .
  *= require_self
  */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box
-}
-
 body {
     background-color: #fff;
     color: #333;
@@ -27,6 +21,10 @@ body {
     line-height: 18px;
     margin: 33px;
     display: block;
+}
+
+#notice {
+  color: green;
 }
 
 h1 {
@@ -64,7 +62,16 @@ a {
 }
 
 a:webkit-any-link {
-    color: -webkit-link;
+    color: webkit-link;
     cursor: pointer;
     text-decoration: underline;
+}
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    cursor: default;
 }
